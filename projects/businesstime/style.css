@@ -1,0 +1,124 @@
+body { 
+    background-image: url(https://images.unsplash.com/photo-1501812325367-78e47cf01c0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+    background-repeat:no-repeat;
+    background-size: 1800px 1300px;
+    margin: 0;
+    font-family: 'Nanum Brush Script', cursive;
+
+
+}
+
+header { 
+    background-color: #222220;
+    
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo {
+    height: 80px;
+    width: 150px;
+    float: left;
+    padding: 10 px 0;
+    margin-left: 150px;
+    
+}
+
+.containter {
+    width: 80%;
+    margin: 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 150px;
+    padding-top: 30px;
+
+    position: relative;
+    
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+
+}
+
+nav a:hover {
+    color: pink;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: pink;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 225ms;
+
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    margin-bottom: 0;
+}
+
+#subtitle {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin-top: 0;
+    
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.containter2 {
+
+        padding:20px;
+        width:100%;
+        position: relative;
+        /* background: rgb(204, 204, 204); Fallback for older browsers without RGBA-support */
+        background: rgba(204, 204, 204, 0.5);
+        /* display: flex;
+        align-items: center; */
+    
+}
+
