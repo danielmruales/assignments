@@ -1,7 +1,7 @@
 body { 
     background-image: url(https://images.unsplash.com/photo-1501812325367-78e47cf01c0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
-    background-repeat:no-repeat;
-    background-size: 1800px 1300px;
+
+    background-size: cover;
     margin: 0;
     font-family: 'Nanum Brush Script', cursive;
 
@@ -10,7 +10,9 @@ body {
 
 header { 
     background-color: #222220;
-    
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header::after {
@@ -23,14 +25,16 @@ header::after {
     width: 150px;
     float: left;
     padding: 10 px 0;
-    margin-left: 150px;
+    margin: auto;
     
 }
 
-.containter {
+/* .containter {
     width: 80%;
     margin: 0;
-}
+    position: fixed;
+    top: 0;
+} */
 
 nav {
     float: right;
@@ -84,10 +88,14 @@ nav a:hover::before {
 }
 
 #title {
-    text-align: center;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
     color: white;
     font-size: 75px;
-    margin-bottom: 0;
+    
 }
 
 #subtitle {
@@ -113,12 +121,11 @@ p {
 .containter2 {
 
         padding:20px;
-        width:100%;
-        position: relative;
-        /* background: rgb(204, 204, 204); Fallback for older browsers without RGBA-support */
+        width:40%;
+        overflow: hidden;
+        margin: auto; 
+       
         background: rgba(204, 204, 204, 0.5);
-        /* display: flex;
-        align-items: center; */
-    
+       
 }
 

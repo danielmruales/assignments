@@ -1,4 +1,35 @@
-.opening {
-    text-align: center;
+.aboutMeTitle {
+    
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    font-size: 30px;
+}
+
+.coverImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.description {
+    padding:5px;
+    width:40%;
+    overflow: hidden;
+    margin: auto;
+    background: rgba(204, 204, 204, 0.5);
+    
+}
+
+p {
+    font-size: 35px;
+}
+
+.span1 {
+    color: red;
+    text-decoration: underline;
 }
