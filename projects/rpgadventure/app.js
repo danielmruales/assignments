@@ -1,17 +1,19 @@
 var readline = require("readline-sync");
 
-var name = readline.question("What is your name, good sir or madam? ");
+var name = readline.question("Welcome young padawan, what is your name?");
 
-console.log("Welcome " + name + ", you've been selected to hunt and kill monsters for the good of humanity and anyone willing to pay money.");
-
+console.log("Welcome " + name + ", this journey will test you in order to determine if you are ready to become a Jedi Knight.");
+console.log("Select an option to begin")
 var playerHealth = 100;
+var isAlive = true;
+
 
 var inventory = ["opium", "pipe for smoking opium", "magnifying glass"];
 
 while(playerHealth > 0){
     var action = readline.keyInSelect(["Walk", "Check Inventory"], "What do you want to do? ")
     if(action === 0){
-        walk()
+        isAlive = false;
     } else if(action === 1){
         checkInventory()
     }

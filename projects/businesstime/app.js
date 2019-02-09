@@ -86,3 +86,4 @@
 // }, 0)
  
 // console.log(reducedPeople);
+

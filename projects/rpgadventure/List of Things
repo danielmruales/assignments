@@ -1,0 +1,22 @@
+Characters:
+The Last Jedi (player)
+Darth Maul - Enemy
+General Greivous - Enemy
+Yoda - Ally
+Obi-Won - Ally
+
+Weapons:
+Lightsaber 
+
+Items (player gets after killing enemy):
+Blaster 
++1 Lightsaber
+Force Choke
+
+Inventory - This will be an empty array, that will gradually grow as the player kills enemies and gets Items
+
+Actions:
+Walk 
+Run 
+Fight 
+    
