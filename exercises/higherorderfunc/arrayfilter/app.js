@@ -29,26 +29,30 @@
 
 //Problem 4
 
-var zealots = [ {
+// var zealots = [ {
 
-    name: "Pope Francis",
-    member: true
-}, 
-{
-    name: "Sam Harris",
-    member: false
-},
-{
-    name: "Ben Afflec",
-    member: true
-}
-]
+//     name: "Pope Francis",
+//     member: true
+// }, 
+// {
+//     name: "Sam Harris",
+//     member: false
+// },
+// {
+//     name: "Ben Afflec",
+//     member: true
+// },
+// {
+//     name: "Richard Dawkins",
+//     member: false
+// }
+// ]
 
-var sanePeople = zealots.filter(function(zealot){
-    return zealot.member === false;
-})
+// var sanePeople = zealots.filter(function(zealot){
+//     return zealot.member === false;
+// })
 
-console.log(sanePeople);
+// console.log(sanePeople);
 
 //Problem 5
 
@@ -77,3 +81,4 @@ console.log(sanePeople);
 // })
 
 // console.log(oldEnough);
+
