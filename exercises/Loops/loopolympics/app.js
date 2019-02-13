@@ -23,17 +23,17 @@
 // }
 // console.log(arr);
 
-// for(var i = 0; i < 101; i++){
-//     if(i%2 === 0){
-//     console.log(i);
-// }
-// }
-
-var fruits = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
-
-var newArr = []
-
-for(var i = 0; i<fruits.length; i+=2){
-    newArr.push(fruits[i]);
+for(var i = 0; i < 101; i++){
+    if(i%2 === 0){
+    console.log(i);
 }
-  console.log(newArr);
+}
+
+// var fruits = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
+
+// var newArr = []
+
+// for(var i = 0; i<fruits.length; i+=2){
+//     newArr.push(fruits[i]);
+// }
+//   console.log(newArr);

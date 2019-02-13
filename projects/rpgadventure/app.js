@@ -45,7 +45,7 @@ var randomMedium = Math.floor(Math.random()*15)+20;
 
 var darth = new Enemy("Darth Maul", randomLow, 150, "Double-sided Lightsaber");
 var skywalker = new Enemy("Anakin", randomMedium, 225, "Force Choke");
-var generalG = new Enemy("General Greciious", randomMedium, 100, "Blaster");
+var generalG = new Enemy("General Greivous", randomMedium, 100, "Blaster");
 
 var enemies = [darth, skywalker, generalG]
 
@@ -87,14 +87,14 @@ function encounter (){
 }
 
 function fight (enemy){
-    var random = Math.floor(Math.random()*5)
+    var random = Math.floor(Math.random()*10)
     if(random === 1){
         miss()
     }else {
         player.hp -= enemy.attack
         enemy.hp -= player.attack
-        console.log(`${playerInput} your hp is now ${player.hp}`)
-        console.log(`You attacked ${enemy.name}, their health is now ${enemy.hp}`)
+        console.log(`${playerInput} your health is ${player.hp}`)
+        console.log(`Well done Padawan, you hit ${enemy.name}, their health is now ${enemy.hp}`)
     }
 }
 
@@ -105,7 +105,7 @@ function enemySelect (){
 }
 
 function miss (){
-    console.log('you missed dawg')
+    console.log("The Sith evaded your attack. It seems training has failed you, strike again.")
 }
 
 function quitGame(){
