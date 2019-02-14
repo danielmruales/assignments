@@ -8,6 +8,20 @@ h1 {
     color: white;
 }
 
-#currentList {
+section {
     color: white;
 }
+
+#divContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.strikened {
+    text-decoration: line-through;
+}
+
+/* .nostrike {
+    text-decoration: none;
+}
+ */
