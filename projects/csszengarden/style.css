@@ -1,32 +1,43 @@
-*{
-    font-size: 20px;    
+* {
+    font-size: 20px;
 }
-.gridContainer{
+
+.gridContainer {
     display: grid;
     grid-template-columns: 1fr;
 }
 
 
-div>div{
+div>div {
     padding: 20px;
 }
 
 .header {
     height: 100px;
     background-image: url(http://www.csszengarden.com/214/huntington.jpg);
-    background-size: cover;
+    background-size: auto auto auto cover;
+    text-align: center;
 }
 
-.footer{
+.right {
+    background-color: rgba(138, 188, 159, 0.5);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), 
+    url(http://www.csszengarden.com/214/gridlines-opaque.png), 
+    url(http://www.csszengarden.com/214/bamboo.png);
+
+}
+
+.footer {
     height: 100px;
+    background-color: black;
 }
 
-.social{
+.social {
     height: 200px;
 }
 
-@media (min-width: 1130px){
-    .gridContainer{
+@media (min-width: 1130px) {
+    .gridContainer {
         grid-template-columns: 2fr 1fr;
     }
 
@@ -34,15 +45,16 @@ div>div{
         grid-column: 1/2;
     }
 
-    .right{
+    .right {
         grid-column: 2/3;
+        
     }
 
-    .authors{
+    .authors {
         grid-row: 2/3;
     }
 
-    .links{
+    .links {
         grid-row: 3/4;
     }
 }

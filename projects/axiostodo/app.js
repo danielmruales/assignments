@@ -25,13 +25,13 @@ axios.get("https://api.vschool.io/daniel/todo").then(function (response) {
     }
 })
 
-// function renderChecked(e){
-// e.target.parentNode.classList.toggle("nostrike")
-// }
+function renderChecked(e){
+e.target.parentNode.classList.toggle("nostrike")
+}
 
-input.addEventListener("click", function (e) {
-    e.divContainer.style.textDecoration = "none";
-});
+// input.addEventListener("click", function (e) {
+//     e.divContainer.style.textDecoration = "none";
+// });
 
 
 
@@ -86,10 +86,6 @@ document.form.addEventListener("submit", function (e) {
         renderTodo(response.data);
     })
 })
-
-
-
-
 
 
 
