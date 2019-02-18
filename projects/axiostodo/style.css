@@ -1,5 +1,6 @@
 body {
     background-color: #2CB84B;
+    color: white;
 }
 
 h1 {
@@ -8,15 +9,14 @@ h1 {
     color: white;
 }
 
-section {
-    color: white;
-}
-
 #divContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
+/* #form-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
 .strikened {
     text-decoration: line-through;
     text-decoration-color: red;

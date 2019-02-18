@@ -1,12 +1,19 @@
 * {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-family: 'Libre Baskerville', sans-serif;
+    @font-face {
+        font-family: 'fonts.woff2' ;
+        src: url(Assets/fonts2.woff2);
+    }
+    
 }
+
 
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr;
+    
 }
-
 
 div>div {
     padding: 20px;
@@ -17,6 +24,12 @@ div>div {
     background-image: url(http://www.csszengarden.com/214/huntington.jpg);
     background-size: auto auto auto cover;
     text-align: center;
+    color: white;
+}
+
+.left {
+    color: #325050;
+    font-size: 70%;
 }
 
 .right {
@@ -24,6 +37,7 @@ div>div {
     background-image: url(http://www.csszengarden.com/214/contours-opaque.png), 
     url(http://www.csszengarden.com/214/gridlines-opaque.png), 
     url(http://www.csszengarden.com/214/bamboo.png);
+    font-size: 70%;
 
 }
 
@@ -43,6 +57,7 @@ div>div {
 
     .left {
         grid-column: 1/2;
+        color: #325050;
     }
 
     .right {
