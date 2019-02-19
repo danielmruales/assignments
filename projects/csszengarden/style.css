@@ -1,18 +1,30 @@
-* {
-    /* font-size: 20px; */
-    font-family: 'Libre Baskerville', sans-serif;
-    @font-face {
-        font-family: 'fonts.woff2' ;
-        src: url(Assets/fonts2.woff2);
-    }
-    
+@font-face {
+    font-family: fonts;
+    src: url(Assets/fonts2.woff2);
+}
+
+@font-face {
+    font-family: fonts2;
+    src: url(Assets/fonts.woff2)
+}
+
+
+@font-face {
+    font-family: fonts3;
+    src: url(Assets/fonts3.woff2)
+}
+
+@font-face {
+    font-family: verdemoderna;
+    src: url(Assets/verdemoderna.woff)
 }
 
 
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr;
-    
+    font-family: fonts2 ;
+
 }
 
 div>div {
@@ -21,34 +33,49 @@ div>div {
 
 .header {
     height: 100px;
-    background-image: url(http://www.csszengarden.com/214/huntington.jpg);
-    background-size: auto auto auto cover;
+    background-image: url(http://www.csszengarden.com/214/huntington.jpg), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/contours@2x.png);
+    background-size: 100% auto, auto, auto, cover;
+    /* background-repeat: no-repeat; */
     text-align: center;
     color: white;
+    font-family: fonts;
 }
+
+
+.headerLogo{
+    height: 100px;
+    background-image: url(http://www.csszengarden.com/214/huntington.jpg), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/contours@2x.png);
+    background-size: 100% auto, auto, auto, cover;
+    /* background-repeat: no-repeat; */
+    text-align: center;
+    color: white;
+    font-family: fonts;
+}
+
 
 .left {
     color: #325050;
     font-size: 70%;
 }
 
-.right {
+.left2 {
     background-color: rgba(138, 188, 159, 0.5);
-    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), 
-    url(http://www.csszengarden.com/214/gridlines-opaque.png), 
-    url(http://www.csszengarden.com/214/bamboo.png);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png),
+        url(http://www.csszengarden.com/214/gridlines-opaque.png),
+        url(http://www.csszengarden.com/214/bamboo.png);
     font-size: 70%;
 
 }
 
 .footer {
+    margin-top: 10%;
     height: 100px;
-    background-color: black;
+    background-color: #134347;
 }
 
-.social {
+/* .social {
     height: 200px;
-}
+} */
 
 @media (min-width: 1130px) {
     .gridContainer {
@@ -60,16 +87,16 @@ div>div {
         color: #325050;
     }
 
-    .right {
+    /* .right {
         grid-column: 2/3;
-        
-    }
+
+    } */
 
     .authors {
         grid-row: 2/3;
     }
 
-    .links {
+    /* .links {
         grid-row: 3/4;
-    }
+    } */
 }
