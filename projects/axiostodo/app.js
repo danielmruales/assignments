@@ -53,10 +53,16 @@ function renderTodo(todo) {
     var input = document.createElement("input");
     input.className = "input";
     input.type = "checkbox";
+    
+    var image = document.createElement("img");
+    image.className = "image"
+    image.src = todo.imgUrl
+
 
     input.addEventListener("click", handleChecked);
 
     parent.appendChild(input);
+    parent.appendChild(image);
 
     if (todo.completed) {
         parent.classList.toggle("strikened");
@@ -75,7 +81,7 @@ function handleChecked(e) {
 document.form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    newTodo = {
+     var newTodo = {
         title: document.form.title.value,
         description: document.form.description.value,
         imgUrl: document.form.image.value

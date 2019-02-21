@@ -17,7 +17,7 @@
 
 // console.log(changingToStrings);
 
-//Problem 3
+// Problem 3
 
 // var names = ["danny", "tiffany", "bill", "kyle", "eric"]
 
@@ -52,7 +52,40 @@
 
 //Problem 5
 
-var people = [
+// var people = [
+//     {
+//         name: "Angelina Jolie",
+//         age: 80
+//     },
+//     {
+//         name: "Eric Jones",
+//         age: 2
+//     },
+//     {
+//         name: "Paris Hilton",
+//         age: 5
+//     },
+//     {
+//         name: "Kayne West",
+//         age: 16
+//     },
+//     {
+//         name: "Bob Ziroll",
+//         age: 100
+//     }
+// ]
+
+// var canGoIn = people.map(function(person){
+//     if(person.age >= 18){
+//         return person.name + " you can go in!"
+//     } else{
+//         return person.name + " Go away!"
+//     }
+// })
+
+// console.log(canGoIn);
+
+var humans = [
     {
         name: "Angelina Jolie",
         age: 80
@@ -75,12 +108,8 @@ var people = [
     }
 ]
 
-var canGoIn = people.map(function(person){
-    if(person.age >= 18){
-        return person.name + " you can go in!"
-    } else{
-        return person.name + " Go away!"
-    }
+var humansHTML = humans.map(function(human) {
+    return `<h1> ${human.name} </h1>` + ` <h2>${human.age}</h2>`
 })
 
-console.log(canGoIn);
+console.log(humansHTML);
