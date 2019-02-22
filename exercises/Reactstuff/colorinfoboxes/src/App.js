@@ -9,7 +9,7 @@ const style = (props) => {
 const App = () => {
   return (
     <div>
-      <div></div>
+      <ColoredBoxes />
 
     </div>
   )

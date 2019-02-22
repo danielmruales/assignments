@@ -1,0 +1,17 @@
+.headerTag{
+    border-style: solid;
+    border-color: white;
+    padding: 10px;
+
+}
+
+.firsth1{
+    font-family: 'Nanum Brush Script', cursive;
+    margin-top: 10%;
+}
+
+span {
+    content: "\00B7";
+    padding-right: 10px;
+  }
+  

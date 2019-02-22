@@ -1,5 +1,5 @@
 body {
-    background-color: darkcyan;
+    background-color: whitesmoke;
 }
 
 #mainheader {
@@ -19,7 +19,7 @@ body {
 #container {
     display: flex;
     justify-content: space-around;
-    background-color: #222120;
+    background-color: black;
     color: white;
     font-family: 'Nanum Brush Script', cursive;
 
