@@ -1,0 +1,51 @@
+#container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+
+
+.black {
+  background-color: black;
+}
+.white {
+  background-color: white;
+}
+
+
+
+
+
+
+.boxone{
+  height: 200px;
+  border: red;
+  border-style: solid;
+  background-color: red;
+}
+
+.boxtwo{
+  height: 200px;
+  border: solid green;
+  background-color: green;
+}
+
+.boxthree{
+  height: 200px;
+  border: solid blue;
+  background-color: blue;
+}
+
+.boxfour{
+  height: 200px;
+  border: solid orange;
+  background-color: orange;
+}
+
+#button1{
+  width: 275px;
+  height: 100px;
+  background-color: gold;
+  color: red;
+  margin-top: 20%;
+}
