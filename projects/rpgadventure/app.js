@@ -44,7 +44,7 @@ var randomLow = Math.floor(Math.random()*10)+10;
 var randomMedium = Math.floor(Math.random()*15)+20;
 
 var darth = new Enemy("Darth Maul", randomLow, 150, "Double-sided Lightsaber");
-var skywalker = new Enemy("Anakin", randomMedium, 225, "Force Choke");
+var skywalker = new Enemy("Anakin", randomMedium, 85, "Force Choke");
 var generalG = new Enemy("General Greivous", randomMedium, 100, "Blaster");
 
 var enemies = [darth, skywalker, generalG]

@@ -1,0 +1,17 @@
+#homeDiv{
+    /* position: absolute; */
+    margin-top: 8.8%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.title {
+    font-family: 'Merriweather', serif;
+
+}
+
+img{
+    height: 250px;
+    border-radius: 10px;
+}
