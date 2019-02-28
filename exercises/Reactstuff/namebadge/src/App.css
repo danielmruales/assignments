@@ -1,4 +1,32 @@
-/* .App {
+.App {
   text-align: center;
+  
 }
- */
+
+body {
+  background-color: goldenrod;
+}
+
+#formDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  background-color: black;
+}
+
+button {
+  background-color: royalblue;
+  color: whitesmoke;
+}
+
+
+ .contents {
+    color: white;
+    background-color: darkcyan;
+    margin-left: 25%;
+    margin-top: 2.5%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 80px;
+   
+ }

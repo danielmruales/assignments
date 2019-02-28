@@ -12,7 +12,7 @@ import './App.css'
 
 const App  = () => {
     return (
-        <div>
+        <div className='app'>
             <Navbar />
             <Switch>
                 <Route exact path='/' component={Home}/>
