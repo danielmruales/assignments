@@ -7,8 +7,9 @@ const Navbar = () => {
     <div className='containerDiv'>
         {/* <div className='navDiv'> */}
                 {/* <ul> */}
-                    <h1 className='title'>WanderLust</h1>
-                     <Link to="/" className='navItems'>Home</Link>
+                    {/* <h1 className='title'>WanderLust</h1> */}
+                    <Link to="/" className='title'>WanderLust</Link>
+                    <Link to="/" className='navItems'>Home</Link>
                     <Link to="/hikes" className='navItems'>Hikes</Link>
                     <Link to="/contact" className='navItems'>Contact</Link>
                 {/* </ul> */}

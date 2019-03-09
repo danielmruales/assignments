@@ -1,7 +1,10 @@
 .containerDiv {
-    background-color: #2BB0C1;
+    background-color: rgba(0, 0, 0, 0.0);
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
+    position: relative;
+    z-index: 1;
+    /* background-image: url(https://images.unsplash.com/flagged/photo-1551301622-6fa51afe75a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80); */
     
 }
 
@@ -9,8 +12,12 @@
     margin-left: 20%;
     padding: 10px;
     color: white;
-    /* display: flex;
-    justify-content: space-around; */
+    font-size: 30px;
+    text-decoration: none;
+    border: solid white;
+    border-radius: 0px;
+    width: 150px;
+    /* font-family: 'ZCOOL QingKe HuangYou', cursive; */
 }
 
 .navItems {
@@ -69,7 +76,7 @@
 } */
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     
     .title{
         margin-left: 0%;

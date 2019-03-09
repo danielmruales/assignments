@@ -9,7 +9,8 @@ const NavbarItems = () => {
 
         <ul className="list">
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/projects'>Projects</Link></li>
+            <li><Link to='/projects'>Code</Link></li>
+            <li><Link to='/contact'> UX </Link></li>
             <li><Link to='/contact'> Contact</Link></li>
             
         </ul>

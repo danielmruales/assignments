@@ -5,10 +5,10 @@ import {SocialIcon} from 'react-social-icons'
 const Footer = () => {
     return (
         <div className='footer'>
-           <SocialIcon url="http://facebook.com/danielmruales" fgColor="white" bgColor="#2BB0C1"/>
-           <SocialIcon url="http://linkedin.com/in/danielmruales" fgColor="white" bgColor="#2BB0C1"/>
-           <SocialIcon url="http://twitter.com/danielmruales" fgColor="white" bgColor="#2BB0C1"/>
-           <SocialIcon url="http://github.com/danielmruales" fgColor="white" bgColor="#2BB0C1"/>
+           <SocialIcon url="http://facebook.com/danielmruales" fgColor="white" bgColor="none"/>
+           <SocialIcon url="http://linkedin.com/in/danielmruales" fgColor="white" bgColor="none"/>
+           <SocialIcon url="http://twitter.com/danielmruales" fgColor="white" bgColor="none"/>
+           <SocialIcon url="http://github.com/danielmruales" fgColor="white" bgColor="none"/>
         </div>
     );
 };
