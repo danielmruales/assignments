@@ -1,8 +1,8 @@
 .hikesMainDiv {
     background-image: url(https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
     width: 100vw;
-    height: 100vh;
-    background-size: cover;
+    /* height: 100vh; */
+    /* background-size: cover; */
     position: absolute;
     top: 0;
 }
@@ -27,7 +27,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows:auto;
     grid-gap: 80px;
-    margin-left: 10%;
+    margin-left: 8%;
+    /* margin-right: 5%; */
 }
 
 
@@ -40,4 +41,26 @@
 
 .stars {
     color: white;
+}
+
+p{ color: white;}
+
+
+@media (max-width: 1130px) {
+    .hikes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .resultPics{
+        height: 80px;
+        width: 125px;
+    }
+}
+
+@media (min-width: 1131px){
+    .hikesMainDiv{
+        height: 100vh;
+    }
 }

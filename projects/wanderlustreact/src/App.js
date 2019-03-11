@@ -12,11 +12,11 @@ const App = () => {
       <div className="App">
         
         <Navbar/>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/hikes" component={Hikes}/> 
-          <Route path="/contact" component={Contact}/>
-        </Switch>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/hikes" component={Hikes}/> 
+            <Route path="/contact" component={Contact}/>
+          </Switch>
         <Footer/>
       </div>
     );
