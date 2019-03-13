@@ -3,8 +3,9 @@
     display: grid;
     grid-template-rows: 115px 50px;
     margin-top: 170px;
-    /* font-family: 'Bangers', cursive; */
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 
 }
 
@@ -16,6 +17,7 @@
 
 .homeDiv > select {
     margin-bottom: 20px;
+    margin-top: 10px;
     /* zoom: 1.5; */
 }
 

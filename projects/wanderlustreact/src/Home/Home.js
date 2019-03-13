@@ -24,8 +24,9 @@ submitButton = e => {
     render (){
     return (
         <div className='homeDiv'>
+            <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato" rel="stylesheet"/>
             <h1 className='welcome'> Welcome To WanderLust </h1>
-            <h2 className='subwelcome'>Find adventure by selecting a city below</h2>
+            <h2 className='subwelcome'>Find adventure, select a city below</h2>
             
                 <select onChange={e => this.props.handleSelectedCity(e.target.value)} className='selector'>
                     <option>Select a City</option>
@@ -33,7 +34,7 @@ submitButton = e => {
                     <option value={this.state.provo}>Provo</option>
                     <option value={this.state.zions}>Zions</option>
                 </select>
-                {/* <button className='submitBtn'> Submit </button> */}
+              
                 <Link className='linkBtn' to='/hikes' onClick={this.toggle}>Submit</Link>
         </div>
         )

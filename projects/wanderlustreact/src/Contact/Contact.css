@@ -2,16 +2,15 @@
     color: white;
     text-align: center;
     margin-top: 150px;
-    
-    
+    font-family: 'Lato', sans-serif;
 }
 
 .question {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .directions {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 
@@ -38,4 +37,8 @@
     /* width: 50%; */
     /* margin-left: 25%; */
     
+}
+
+.thanksMsg {
+    display: none;
 }

@@ -18,7 +18,8 @@ class GlobalData extends Component {
 
 
 
-toggle = () => {
+toggle = (e) => {
+    e.preventDefault()
     this.setState(prevState => ({
         selected: !prevState.selected
     }))

@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <WelcomeMessage/>
         <DownCount/> 
-        <CountUp/>
+        <CountUp value={20}/>
       </div>
     );
   }

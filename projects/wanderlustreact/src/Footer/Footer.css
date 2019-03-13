@@ -1,9 +1,8 @@
 .footer {
-    /* background-color: #2BB0C1; */
     width: 100vw;
     position: fixed;
     bottom: 0;
-     display: flex;
+    display: flex;
     justify-content: center; 
 
 }
