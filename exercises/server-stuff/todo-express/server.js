@@ -8,7 +8,9 @@ const port = 6969;
 app.use(express.json());
 
 app.get('/todo', (req, res) => {
-    res.send(data)
+    let {complete} = req.query;
+    const finished = data.filter(todo => todo.completed === complete)
+    res.send(finished)
 })
 
 app.get('/todo/:id', (req, res) => {
@@ -26,7 +28,7 @@ app.post('/todo', (req, res) => {
 
 
 app.delete('/todo/:id', (req, res) => {
-    const {id} = req.params //Are what go after the second / in this case it is :id 
+    const {id} = req.params //req.params is what go after the second / in this case it is :id 
     const index = data.findIndex(todo => todo.id === id)
     data.splice(index, 1)
     res.send('Succesfully out of Your Way.')
@@ -36,15 +38,16 @@ app.put("/todo/:id", (req, res) => {
     const updatedObject = req.body;
     const {id} = req.params;
     data.forEach(todo => {
-        console.log(111,todo.id)
         if(todo.id === id){
             todo = Object.assign(todo, updatedObject); //object.assign allows the server to keep any data that wasn't updated untouched
-            
-        } else{
-            res.send('what you looking for brah?')
+            res.send(todo)
+        } else {
+            res.send('non existant')
         }
     })
-    res.send(updatedObject)
+    // res.send(data)
+    // let found = data.find(todo => todo.id === id)
+    // found ? res.send(found) : res.send("Can't find it.") //Why does a terenary work but not an else statement??
 })
 
 
