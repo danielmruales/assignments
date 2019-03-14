@@ -38,3 +38,8 @@ app.delete('/bounties/:id', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on port ${port}`)
 })
+
+
+.get((req,res) => {
+    Vacation.find((err, vacation))
+})
