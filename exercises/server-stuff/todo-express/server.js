@@ -8,9 +8,9 @@ const port = 6969;
 app.use(express.json());
 
 app.get('/todo', (req, res) => {
-    let {complete} = req.query;
-    const finished = data.filter(todo => todo.completed === complete)
-    res.send(finished)
+    // let {complete} = req.query;
+    // const finished = data.filter(todo => todo.completed === complete)
+    res.send(data)
 })
 
 app.get('/todo/:id', (req, res) => {
