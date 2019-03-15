@@ -41,13 +41,10 @@ app.put("/todo/:id", (req, res) => {
         if(todo.id === id){
             todo = Object.assign(todo, updatedObject); //object.assign allows the server to keep any data that wasn't updated untouched
             res.send(todo)
-        } else {
-            res.send('non existant')
-        }
+        } 
     })
-    // res.send(data)
-    // let found = data.find(todo => todo.id === id)
-    // found ? res.send(found) : res.send("Can't find it.") //Why does a terenary work but not an else statement??
+    let found = data.find(todo => todo.id === id)
+    found ? res.send(found) : res.send("Can't find it.") //Why does a terenary work but not an else statement??
 })
 
 

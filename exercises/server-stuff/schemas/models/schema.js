@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const objectId = mongoose.Schema.Types.objectId
-const wanderlustUser = new mongoose.Schema({
+const youtubeUser = new mongoose.Schema({
 
     username: {
             type: String,
@@ -13,7 +13,7 @@ const wanderlustUser = new mongoose.Schema({
         required: true,
         minlength: 6
     },
-    savedHikes: [{ //This part is a reference to another collection
+    savedHikes: [{ //This part is referencing another collection named videos. Collection also means another schema file. So another file that contains the properties for videos.
         type: objectId,
         ref: 'Hikes'
     }],
@@ -31,4 +31,4 @@ const wanderlustUser = new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model('Profile', wanderlustUser)
+module.exports = mongoose.model('Profile', youtubeUser)
