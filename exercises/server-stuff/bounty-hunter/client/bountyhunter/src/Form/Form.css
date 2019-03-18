@@ -1,0 +1,20 @@
+.bountyEntry{
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    flex-direction: column;
+    width: 10%;
+    margin: auto;
+}
+
+
+
+
+
+.btn {
+    background-color: whitesmoke;
+    border: black;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+

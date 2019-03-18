@@ -45,7 +45,7 @@
     color: white;
 }
 
-@media (max-width: 489px){
+@media (max-width: 485px){
     .homeDiv{
         grid-template-rows: 160px 50px;
     }
