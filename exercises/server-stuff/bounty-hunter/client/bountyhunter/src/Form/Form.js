@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
+import { withGlobalData } from '../GlobalData';
 import './Form.css'
 
 class Form extends Component {
 
+   
 
-    submit = e => {
-        e.preventDefault()
-    }
   
   render() {
         return (
@@ -29,4 +28,4 @@ class Form extends Component {
     }
 }
 
-export default Form;
+export default withGlobalData(Form);

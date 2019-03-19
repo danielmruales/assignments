@@ -4,7 +4,8 @@ const Bounty = require('../models/bountyModel');
 
 bountyRoute.route('/')
 .get((req, res) => {
-    Bounty.find((err, bounties) => err ? res.status(500).send(err) : res.status(200).send(bounties))})
+    Bounty.find((err, bounties) => err ? res.status(500).send(err) : res.status(200).send(bounties))
+})
 
 .post((req, res) => {
     const newBounty = new Bounty(req.body)

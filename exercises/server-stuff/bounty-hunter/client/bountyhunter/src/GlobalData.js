@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-const {Provider, Consumer} = React.createContext;
-import axios from 'axios';
+import axios from 'axios'
+
+const {Provider, Consumer} = React.createContext();
 
 class GlobalData extends Component {
     constructor(){
@@ -10,20 +11,27 @@ class GlobalData extends Component {
         }
     }
 
-    postBounty = () => {
-        axios.get('/bounties', this.state).then(res =>{
-            bounties
-            console.log(bounties)
+    getBounty = () => {
+        axios.get('/bounties').then(response => {
+            this.setState({bounties:response.data.bounties})
         })
     }
 
     render() {
+        
         return (
-            <div>
-                <Provider>
+            
+                <Provider value={
+                    {
+                    ...this.state,
+                    getBounty: this.getBounty
+                    }
+            }
+                >
 
+                {this.props.children}
                 </Provider>
-            </div>
+           
         );
     }
 }
@@ -31,5 +39,7 @@ class GlobalData extends Component {
 export default GlobalData;
 
 export function withGlobalData (C) {
-
+    return props => <Consumer>
+                     {value => <C {...value} {...props}/>}
+                    </Consumer>
 }

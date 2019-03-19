@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import {withGlobalData} from '../GlobalData'
 
 class Bounties extends Component {
     
-    // componentDidMount(){
-    //     this.props.getBounties()
-    // }
+
+    componentDidMount(){
+        this.props.getBounty()
+        console.log(this.props.getBounty())
+    }
     
     
     render() {
@@ -16,4 +19,4 @@ class Bounties extends Component {
     }
 }
 
-export default Bounties;
+export default withGlobalData(Bounties);
