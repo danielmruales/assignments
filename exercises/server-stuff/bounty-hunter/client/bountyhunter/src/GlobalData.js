@@ -11,7 +11,7 @@ class GlobalData extends Component {
     }
 
     postBounty = () => {
-        axios.post('/bounties', this.state).then(res =>{
+        axios.get('/bounties', this.state).then(res =>{
             bounties
             console.log(bounties)
         })
