@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
-const {Provider, Consumer} = React.createContext()
 import axios from 'axios'
+const {Provider, Consumer} = React.createContext()
 
 
 class GlobalData extends Component {

@@ -4,8 +4,6 @@ import {Link} from 'react-router-dom'
 import { withGlobal } from '../GlobalData';
 
 class Hikes extends Component {
-
-    
  
     componentDidMount(){
         this.props.getCityInfo()
