@@ -1,3 +1,8 @@
+body {
+    background-color: aqua;
+    margin: 0;
+}
+
 h2 {
     
     font-family: 'News Cycle';
@@ -5,8 +10,6 @@ h2 {
     font-size: 50px;
     color: black;
     margin-top: 35px;
-
-
 
 }
 
@@ -18,9 +21,7 @@ header{
     font-size: 70px;
 }
 .para1 {
-    display: inline-block;
-
-
+    display: block;
 }
 img{
     width: 40%;
@@ -28,10 +29,11 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+    border: 3px solid lawngreen;
 }
 
 p{
-    display: inline-block;
+    display: block;
     text-align: center;
-
 }
