@@ -1,6 +1,7 @@
 body{
-    background-color: red;
+    background-color: blue;
     font-family: 'Staatliches', cursive;
+    margin: 0;
 }
 
 #header{
@@ -9,30 +10,26 @@ body{
     background-color: black;
     color: white;
     margin-bottom: 100px;
+    width: 100vw;
+    
 }
 
 
-.baddiesPic{
-    display: inline-block;
-    width: 33%;
-    margin-bottom: 100px;
+.baddiesLaidOut{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr)
 }
 
-/* .baddiesName{
-    text-align: center;
-} */
 
 img{
-    width: 300px;
-    height: 300px;
-
+    width: 200px;
+    height: 200px;
+    padding: 20px;
 }
 
 
 #submitButton{
-    margin-top: 0px;
-    display: flex;
-    justify-content: center;
+  margin: auto;
 }   
 #result{
     text-align: center;
