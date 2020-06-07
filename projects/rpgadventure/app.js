@@ -1,7 +1,7 @@
 
 //Introduction
 
-var readline = require("readline-sync");
+const readline = require("readline-sync");
 
 var playerInput = readline.question("\nWelcome young padawan, what is your name?");
 console.log("\nWelcome " + playerInput + ", this journey will test you in order to determine if you are ready to become a Jedi Knight.");
